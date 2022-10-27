@@ -16,11 +16,9 @@
 
 
 // list password variables/arrays
-lower = ["a", "b", "c", "d","e", "f", "g", "h","i", "j", "k", "l","m", "n", "o", "p","q", "r", "s", "t","u", "v", "w", "x","y", "z"];
-upper = ["A", "B", "C", "D","E", "F", "G", "H","I", "J", "K", "L","M", "N", "O", "P","Q", "R", "S", "T","U", "V", "W", "X","Y", "Z"];
-number = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-special = ["!", "@", "#", "$","%", "^", "&", "*","(", ")", "?"];
-//super = ["2"]
+
+
+
 //How do we assign these values???? FOR loop??
 //How do I VALIDATE my INPUT for one type minimum??
 
@@ -41,28 +39,53 @@ generateBtn.addEventListener("click", writePassword);
 
 
 
-// click generate password THEN PROMPT to select length
+// click generate password THEN WINDOW.PROMPT to select length
 function generatePassword() {
   var userChoice = window.prompt ("Choose a charachter length between 8 - 128") 
+
+  var interger = isNaN(userChoice)
     
-    if (userChoice < 8 || userChoice > 128) { alert("please choose a number within range")}
-  }
+    if (userChoice < 8 || userChoice > 128) { 
+      alert("please choose a number within range")
+      return}
 
+    else if (interger == true) { 
+      alert ("Please make a valid choice")
+      return}
     
-      
+    
+  var lowerChoice = window.confirm ("Do you want to include lower case?")
+  var upperChoice = window.confirm ("Do you want to include upper case?")
+  var numberChoice = window.confirm ("Do you want to include numbers?")
+  var specialChoice = window.confirm ("Do you want to include special?")
+
+
+var lower = ["a", "b", "c", "d","e", "f", "g", "h","i", "j", "k", "l","m", "n", "o", "p","q", "r", "s", "t","u", "v", "w", "x","y", "z"];
+var upper = ["A", "B", "C", "D","E", "F", "G", "H","I", "J", "K", "L","M", "N", "O", "P","Q", "R", "S", "T","U", "V", "W", "X","Y", "Z"];
+var number = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+var special = ["!", "@", "#", "$","%", "^", "&", "*","(", ")", "?"];
+var superList = []
+
+
+  if (lowerChoice === true) {superList.push = (lower)}
+
+  if (upperChoice === true) {superList.push = (upper)}
+
+  if (numberChoice === true) {superList.push = (number)}
+
+  if (specialChoice === true) {superList.push = (special)}
   
-
-
-
-    // if (userChoice < 8 && userChoice > 128) { "Please choose a number between 8 and 18"}
   
+  console.log(superList)
+  
+//   var index = Math.floor(Math.random() * userChoice.length);
+//   var newThing = userChoice[index];
 
-// TF length !=== interger THEN alert "must be an interger"
 
-// ELSE TF length !===between 8 and 129 THEN Prompt
-// ELSE"must choose between 8 - 129 charachters"
+// console.log(newThing)
 
-
+}
+  
 
 
 //CONFIRM "would you like to include lowercase letters"
