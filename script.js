@@ -15,49 +15,14 @@
 // THEN the password is either displayed in an alert or written to the page
 
 
-// click generate password THEN PROMPT to select length
-
-// TF length is between 8 and 129 THEN Prompt
-// ELSE"must choose between 8 - 129 charachters"
-
-//PROMPT "would you like to include lowercase letters"
-  // IF true then PROMPT and assign ELSE "???"
-
-//PROMPT "would you like to include upperrcase letters"
-  // IF true then PROMPT and assign  ELSE "???"
-
-//PROMPT "would you like to include numbers"
-  // IF true then PROMPT and assign ELSE "???"
-
-//PROMPT "would you like to special charachters"
-  // IF true then PROMPT and assign ELSE "???"
-
 // list password variables/arrays
 lower = ["a", "b", "c", "d","e", "f", "g", "h","i", "j", "k", "l","m", "n", "o", "p","q", "r", "s", "t","u", "v", "w", "x","y", "z"];
 upper = ["A", "B", "C", "D","E", "F", "G", "H","I", "J", "K", "L","M", "N", "O", "P","Q", "R", "S", "T","U", "V", "W", "X","Y", "Z"];
 number = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 special = ["!", "@", "#", "$","%", "^", "&", "*","(", ")", "?"];
-
+//super = ["2"]
 //How do we assign these values???? FOR loop??
-
-// generate random password based on arrays
-  //IF include upper is true then
-  //IF include lower is true then
-  //IF include number is true then
-  //IF include special is true then
-  
-
-
-
-
-
-
-
-
-
-
-
-
+//How do I VALIDATE my INPUT for one type minimum??
 
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
@@ -73,3 +38,51 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
+
+
+// click generate password THEN PROMPT to select length
+function generatePassword() {
+  var userChoice = window.prompt ("Choose a charachter length between 8 - 128") 
+    
+    if (userChoice < 8 || userChoice > 128) { alert("please choose a number within range")}
+  }
+
+    
+      
+  
+
+
+
+    // if (userChoice < 8 && userChoice > 128) { "Please choose a number between 8 and 18"}
+  
+
+// TF length !=== interger THEN alert "must be an interger"
+
+// ELSE TF length !===between 8 and 129 THEN Prompt
+// ELSE"must choose between 8 - 129 charachters"
+
+
+
+
+//CONFIRM "would you like to include lowercase letters"
+  // IF true then CONFIRM and assign ELSE "???"
+
+//CONFIRM "would you like to include upperrcase letters"
+  // IF true then CONFIRM and assign  ELSE "???"
+
+//CONFIRM "would you like to include numbers"
+  // IF true then CONFIRM and assign ELSE "???"
+
+//CONFIRM "would you like to special charachters"
+  // IF true then CONFIRM and assign ELSE "???"
+
+
+
+
+
+// generate random password based on arrays
+  //IF include upper is true then PUSH
+  //IF include lower is true then PUSH
+  //IF include number is true then PUSH
+  //IF include special is true then PUSH
