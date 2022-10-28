@@ -16,27 +16,8 @@
 
 
 // list password variables/arrays
-
-
-
 //How do we assign these values???? FOR loop??
 //How do I VALIDATE my INPUT for one type minimum??
-
-// Assignment Code
-var generateBtn = document.querySelector("#generate");
-
-// Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
-
-  passwordText.value = password;
-
-}
-
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
-
 
 
 // click generate password THEN WINDOW.PROMPT to select length and filter wrong responses
@@ -46,7 +27,7 @@ function generatePassword() {
   var interger = isNaN(userChoice)
     // create IF statements that filter the user choice
     if (userChoice < 8 || userChoice > 128) { 
-      alert("please choose a number within range")
+      alert("Please choose a number within range")
       return generatePassword()} // restarts function after invalid choice
 
     else if (interger == true) { 
@@ -79,11 +60,9 @@ var superList = []
 
   if (specialChoice) {superList.push(special)};
 
-    
-  console.log(superList)
 
   //Convert to single huge array
-  superMerge = superList.flat(1);
+  var superMerge = superList.flat(1);
 
   console.log(superMerge)
 
@@ -93,17 +72,38 @@ var superList = []
   //    var index = Math.floor(Math.random() * superList.length);
   
   //console.log(index)
+let password = " ";
 
-  let text = "";
-for (let i = 0; i < userChoice; i++) {
-  var index = Math.floor(Math.random() * superMerge.length);
-  text += superMerge[i];
+for (let i = 0; i < userChoice; i++) 
+{
+  var prime = Math.floor(Math.random() * superMerge.length);
+ 
+  password += superMerge[prime];
 
-}console.log(text)
+  console.log(password)
+  
+  
+}
+return password;
+
 
 
 }
   
+// Assignment Code
+var generateBtn = document.querySelector("#generate");
+
+// Write password to the #password input
+function writePassword() {
+  var password = generatePassword();
+  var passwordText = document.querySelector("#password");
+
+  passwordText.value = password;
+
+}
+
+// Add event listener to generate button
+generateBtn.addEventListener("click", writePassword);
 
 
 
@@ -111,9 +111,3 @@ for (let i = 0; i < userChoice; i++) {
 
 
 
-
-// generate random password based on arrays
-  //IF include upper is true then PUSH
-  //IF include lower is true then PUSH
-  //IF include number is true then PUSH
-  //IF include special is true then PUSH
