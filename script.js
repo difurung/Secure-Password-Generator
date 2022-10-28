@@ -39,66 +39,74 @@ generateBtn.addEventListener("click", writePassword);
 
 
 
-// click generate password THEN WINDOW.PROMPT to select length
+// click generate password THEN WINDOW.PROMPT to select length and filter wrong responses
 function generatePassword() {
   var userChoice = window.prompt ("Choose a charachter length between 8 - 128") 
 
   var interger = isNaN(userChoice)
-    
+    // create IF statements that filter the user choice
     if (userChoice < 8 || userChoice > 128) { 
       alert("please choose a number within range")
-      return}
+      return generatePassword()} // restarts function after invalid choice
 
     else if (interger == true) { 
       alert ("Please make a valid choice")
-      return}
+      return generatePassword()}
+
     
     
+    // Need CONFIRM statements for each categoryu
   var lowerChoice = window.confirm ("Do you want to include lower case?")
   var upperChoice = window.confirm ("Do you want to include upper case?")
   var numberChoice = window.confirm ("Do you want to include numbers?")
   var specialChoice = window.confirm ("Do you want to include special?")
 
-
+//create base arrays for each category
 var lower = ["a", "b", "c", "d","e", "f", "g", "h","i", "j", "k", "l","m", "n", "o", "p","q", "r", "s", "t","u", "v", "w", "x","y", "z"];
 var upper = ["A", "B", "C", "D","E", "F", "G", "H","I", "J", "K", "L","M", "N", "O", "P","Q", "R", "S", "T","U", "V", "W", "X","Y", "Z"];
 var number = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 var special = ["!", "@", "#", "$","%", "^", "&", "*","(", ")", "?"];
 var superList = []
 
+//Find a way to create a combined list
+// Each PUSH will add an array to the open array
 
-  if (lowerChoice === true) {superList.push = (lower)}
+  if (lowerChoice) {superList.push(lower)}
 
-  if (upperChoice === true) {superList.push = (upper)}
+  if (upperChoice) {superList.push(upper)}
 
-  if (numberChoice === true) {superList.push = (number)}
+  if (numberChoice) {superList.push(number)}
 
-  if (specialChoice === true) {superList.push = (special)}
-  
-  
+  if (specialChoice) {superList.push(special)};
+
+    
   console.log(superList)
+
+  //Convert to single huge array
+  superMerge = superList.flat(1);
+
+  console.log(superMerge)
+
+  // pick random numbers with length based on userChoice
+
+  // for (let i = 0; i < userChoice.length; i++)
+  //    var index = Math.floor(Math.random() * superList.length);
   
-//   var index = Math.floor(Math.random() * userChoice.length);
-//   var newThing = userChoice[index];
+  //console.log(index)
 
+  let text = "";
+for (let i = 0; i < userChoice; i++) {
+  var index = Math.floor(Math.random() * superMerge.length);
+  text += superMerge[i];
 
-// console.log(newThing)
+}console.log(text)
+
 
 }
   
 
 
-//CONFIRM "would you like to include lowercase letters"
-  // IF true then CONFIRM and assign ELSE "???"
 
-//CONFIRM "would you like to include upperrcase letters"
-  // IF true then CONFIRM and assign  ELSE "???"
-
-//CONFIRM "would you like to include numbers"
-  // IF true then CONFIRM and assign ELSE "???"
-
-//CONFIRM "would you like to special charachters"
-  // IF true then CONFIRM and assign ELSE "???"
 
 
 
