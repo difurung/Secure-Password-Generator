@@ -12,7 +12,7 @@
 
 ## Description
 
-Part of being on the modern internet means protecting your information. One of the ways you do this is to have a random password that is not easy to guess. This project was created as a secure password generator that allows the user to generate a truly random password for them. Several parameters are available to choose from to provide a degree customizeability for the user. 
+Part of being on the modern internet means protecting your information. One of the ways you do this is to have a random password that is not easy to guess. This project was created as a secure password generator that allows the user to generate a truly random password for them. Several parameters are available to choose from to provide a degree customizeability for the user.
 
 ## Screenshot
 
@@ -81,19 +81,23 @@ Pull requests are welcome. Any suggestions or changes may be made by opening up 
 Test 1
 
 Enter any charachter that is not a number. The user should be alerted that the input is not a number and directed to make a valid choice.
+
 ![A picture of an alert prompt saying that the input is not a number](assets/not%20a%20number.png)
 
 Test 2
 
 Enter a number less than 8. The user should be alerted that the number is not within range.
+
 ![A picture of an alert prompt saying that the number is not within range.](assets/numRange.png)
 
 Test 3
 
 Enter a number greater than 128. The user should be alerted that the number is not within range.
+
 ![A picture of an alert prompt saying that the number is not within range.](assets/numRange.png)
 
 Test 4
 
 Choose "Cancel" on all four category choices. The user should be alerted that they must choose at least one category.
+
 ![A picture of an alert prompt saying that they must choose at least one category.](assets/oneCat.png)
