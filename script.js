@@ -29,7 +29,7 @@ function generatePassword() {
   var upperChoice = window.confirm ("Do you want to include upper case letters?")
   var numberChoice = window.confirm ("Do you want to include numbers?")
   var specialChoice = window.confirm ("Do you want to include special characters?")
-console.log(typeof(userChoice))
+
 //create base arrays for each category then empty array for all category choices
 
 var lower = ["a", "b", "c", "d","e", "f", "g", "h","i", "j", "k", "l","m", "n", "o", "p","q", "r", "s", "t","u", "v", "w", "x","y", "z"];
