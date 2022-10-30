@@ -5,12 +5,15 @@
 
 
 // click generate password THEN WINDOW.PROMPT to select length and filter wrong responses
+
 function generatePassword() {
 
   //Assigns input to  userChoice
+
   var userChoice = window.prompt ("Choose a charachter length between 8 - 128") 
 
     // create IF statements that filter the user choice
+
     if (userChoice < 8 || userChoice > 128) { 
       alert("Please choose a number in range between 8 and 128")
       return generatePassword();} // restarts function after invalid choice
@@ -21,12 +24,14 @@ function generatePassword() {
     
     
     // Need CONFIRM statements for each category
+
   var lowerChoice = window.confirm ("Do you want to include lower case?")
   var upperChoice = window.confirm ("Do you want to include upper case?")
   var numberChoice = window.confirm ("Do you want to include numbers?")
   var specialChoice = window.confirm ("Do you want to include special?")
 
 //create base arrays for each category then empty array for all category choices
+
 var lower = ["a", "b", "c", "d","e", "f", "g", "h","i", "j", "k", "l","m", "n", "o", "p","q", "r", "s", "t","u", "v", "w", "x","y", "z"];
 var upper = ["A", "B", "C", "D","E", "F", "G", "H","I", "J", "K", "L","M", "N", "O", "P","Q", "R", "S", "T","U", "V", "W", "X","Y", "Z"];
 var number = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
@@ -56,6 +61,7 @@ var superList = []
   //Convert to single huge array
   var superMerge = superList.flat(1);
 
+
  
 
   // pick random numbers with length based on userChoice
@@ -69,7 +75,6 @@ for (let i = 0; i < userChoice; i++)
  
   password += superMerge[prime];
 
-  //console.log(password)
   
   
 }

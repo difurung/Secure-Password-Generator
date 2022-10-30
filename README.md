@@ -7,12 +7,12 @@
 - [Usage](#usage)
 - [Credits](#credits)
 - [License](#license)
-- [How-to-Contribute](#How-to-Contribute)
-- [Tests](#Tests)
+- [How to Contribute](#how-to-contribute)
+- [Tests](#tests)
 
 ## Description
 
-Part of being on the modern internet means protecting your information. One of the ways you do that is to have a secure password to protect your information. This project was created as a secure password generator allowing the user to come up with a truly random password. Several parameters were included for the user to choose so they can customize the password however they want.
+Part of being on the modern internet means protecting your information. One of the ways you do this is to have a random password that is not easy to guess. This project was created as a secure password generator that allows the user to generate a truly random password for them. Several parameters are available to choose from to provide a degree customizeability for the user. 
 
 ## Screenshot
 
@@ -22,7 +22,7 @@ Part of being on the modern internet means protecting your information. One of t
 
 To use this app simply follow the prompts.
 
-1. Click "Generate Password" as shown above.
+1. Click "Generate Password" shown in the screenshot above.
 
 2. Choose the password length.
 
