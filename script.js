@@ -13,12 +13,11 @@ function generatePassword() {
     // create IF statements that filter the user choice
     if (userChoice < 8 || userChoice > 128) { 
       alert("Please choose a number in range between 8 and 128")
-      return generatePassword()} // restarts function after invalid choice
+      return generatePassword();} // restarts function after invalid choice
 
     else if (isNaN(userChoice)) { 
       alert ("That is not a number. Please enter a valid choice, ")
-      return generatePassword()}
-
+      return generatePassword();}
     
     
     // Need CONFIRM statements for each category
@@ -37,6 +36,8 @@ var superList = []
 //Find a way to create a combined list
 // Each PUSH will add an array to the open superListarray
 
+
+
   if (lowerChoice) {superList.push(lower)}
 
   if (upperChoice) {superList.push(upper)}
@@ -48,7 +49,7 @@ var superList = []
   if (!lowerChoice && !upperChoice && !numberChoice && !specialChoice) {
 
     alert("You must choose at least one category.")
-    return;
+    return "Pick at least one category!";
   }
 
 
@@ -68,7 +69,7 @@ for (let i = 0; i < userChoice; i++)
  
   password += superMerge[prime];
 
-  console.log(password)
+  //console.log(password)
   
   
 }
