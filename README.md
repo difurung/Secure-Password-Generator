@@ -7,6 +7,7 @@
 - [Usage](#usage)
 - [Credits](#credits)
 - [License](#license)
+- [Access](#access)
 - [How to Contribute](#how-to-contribute)
 - [Tests](#tests)
 
@@ -61,6 +62,13 @@ https://www.javascripttutorial.net/es-next/javascript-array-flat/
 https://youtu.be/iKo9pDKKHnc
 
 https://youtu.be/O-79Cb5s9U4
+
+
+## Access
+
+[Github Repository](https://github.com/difurung/Secure-Password-Generator)
+
+[Deployed Application](https://difurung.github.io/Secure-Password-Generator/)
 
 ## License
 
