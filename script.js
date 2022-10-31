@@ -43,19 +43,19 @@ var superList = []
 
 
 
-  if (lowerChoice) {superList.push(lower)}
+  if (lowerChoice) {superList.push(lower)};
 
-  if (upperChoice) {superList.push(upper)}
+  if (upperChoice) {superList.push(upper)};
 
-  if (numberChoice) {superList.push(number)}
+  if (numberChoice) {superList.push(number)};
 
   if (specialChoice) {superList.push(special)};
-
+// why does else not work here?
   if (!lowerChoice && !upperChoice && !numberChoice && !specialChoice) {
 
     alert("You must choose at least one category.")
-    return "Pick at least one category!";
-  }
+    return "Pick at least one category!"
+  };
 
 
   //Convert to single huge array
