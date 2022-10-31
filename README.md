@@ -13,7 +13,7 @@
 
 ## Description
 
-Part of being on the modern internet means protecting your information. One of the ways you do this is to have a random password that is not easy to guess. This project was created as a secure password generator that allows the user to generate a truly random password for them. Several parameters are available to choose from to provide a degree customizeability for the user.
+Part of being on the modern internet means protecting your information. One of the ways you do this is to have a random password that is not easy to guess. This project was created as a secure password generator that allows the user to generate a truly random password for them. Several parameters are available to choose from to provide a degree customizability for the user.
 
 ## Screenshot
 
